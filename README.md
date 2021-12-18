@@ -1,4 +1,4 @@
-# TemperatureConveterJavaSwing
+# TemperatureConverterJavaSwing
 Temperature Converter Java Swing 
 
 

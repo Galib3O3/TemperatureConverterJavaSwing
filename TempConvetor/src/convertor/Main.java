@@ -6,9 +6,17 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+public class Main {
+
+    public static void main(String[] args) {
+     new Ccovertor();
+    }
+}
+
+
  class  Ccovertor extends JFrame implements ActionListener {
 
-    public JButton jb1,jb2,jb3, jb4;
+    public JButton jb1,jb2,jb3, jb4,jb5;
     public JTextField tx1,tx2,tx3,tx4;
     public JPanel j;
 
@@ -113,6 +121,15 @@ import java.awt.event.ActionListener;
         jb4.addActionListener(this);
         jb4.setFont(f);
         add(jb4);
+     
+      //Exit Button
+        jb5 = new JButton("EXIT");
+        jb5.setBackground(new Color(152, 152, 149));
+        jb5.addActionListener(this);
+        jb5.setBounds(250,460,100,40);
+        jb5.setFont(f);
+        add(jb5);
+
 
         j = new JPanel();
         j.setBounds(0,0,400,550);
@@ -252,15 +269,10 @@ import java.awt.event.ActionListener;
             tx4.setText(null);
 
         }
+       else if(e.getSource()==jb5)
+        {
+            dispose();
+        }
 
-    }
-}
-
-
-
-public class Main {
-
-    public static void main(String[] args) {
-     new Ccovertor();
     }
 }
